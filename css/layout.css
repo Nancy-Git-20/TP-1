@@ -1,0 +1,464 @@
+/* RESET
+**********************************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family:'Roboto', sans-serif;
+	background:#EDEEF0;
+	overflow-x: hidden;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none; cursor:pointer;
+   -webkit-transition: all 0.2s ease;
+	-moz-transition: 	all 0.2s ease;
+	-o-transition: 		all 0.2s ease;
+	transition: 		all 0.2s ease;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* NAV
+**********************************************************************/
+HEADER{
+	width:100%;
+	padding:15px 0px;
+	background-color:#353A40;
+    -webkit-box-shadow: 0 20px 30px 0 rgba(0,0,0,0.85);
+    -moz-box-shadow: 0 20px 30px 0 rgba(0,0,0,0.85);
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.85);
+    position: relative;
+    z-index: 20;
+}
+#Logo{
+    width:auto;
+    display: inline-block;
+}
+#Logo IMG{
+	width:110px;
+	height:auto;
+	display:inline-block;
+	vertical-align:middle;
+}
+#Logo STRONG{
+	display:inline-block;
+	color:#FFF;
+	font-size:23px;
+	font-weight:normal;
+	padding:0 0 0 15px;
+}
+HEADER .nav-link{
+	color:#FFF;
+}
+HEADER .navbar-nav .nav-link{
+    color: #9B9C9E;
+    font-size:19px;
+    cursor:pointer;
+}
+HEADER .navbar-nav .nav-link.colorGreen{
+    color:#28A847;
+}
+HEADER .navbar-nav .nav-link.active{
+    color:#FFF;
+}
+HEADER .navbar-nav .nav-link:hover{
+    color:#FEC900;
+}
+HEADER .navbar-nav .nav-link.active:hover{
+    color:#FFF;
+}
+HEADER .navbar-toggler{
+    border-radius:8px;
+    background: #FEC900;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+}
+HEADER .navbar-toggler-icon{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* SLIDER
+**********************************************************************/
+.Slider{
+    width: 100%;
+    background: #000;
+    margin-top: 81px;
+    overflow: hidden;
+}
+.Slider FIGURE{
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.Slider FIGURE .BgBlack{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left:0;
+    background: rgba(0,0,0,0.53);
+}
+.carousel-item{
+    z-index: 3
+}
+.carousel-caption{
+    width:100%;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    z-index: 4;
+}
+.wrapInfo{
+    height:100%;
+}
+
+.carousel-indicators,
+.carousel-control-next,
+.carousel-control-prev{
+    z-index:10;
+}
+.Slider H2{
+    width: 100%;
+    font-size:36px;
+    font-weight: bold;
+    padding: 0 0 10px;
+}
+.Slider P{
+    width: 100%;
+    font-size:20px;
+    line-height: 30px;
+}
+.Slider .Botones{
+    width:100%;
+    margin:25px 0 0;
+}
+
+.rowBox{
+    width:100%;
+    padding:20px 0px;
+}
+.rowBox H3{
+    font-size:35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#232428;
+    padding: 0 0px 20px;
+}
+.rowBox H5{
+    font-size:14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:#232428;
+    padding: 0 0 5px;
+}
+.Slider .container-fluid{
+    padding: 0;
+}
+#Slider, #Slider *{
+    max-height:800px;
+}
+
+
+/* ORADORES
+**********************************************************************/
+.Card{
+    width:100%;
+    display: inline-block;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 0 0px
+}
+.Card FIGURE{
+    width:100%;
+    height:410px;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    overflow:hidden;
+}
+.Card FIGURE IMG{
+    min-width: 100%;
+    min-height: 100%;
+}
+.Card .Data{
+    width:100%;
+    display: inline-block;
+    padding: 30px;
+}
+.Card .Tags{
+    width:100%;
+    padding: 0 0 10px;
+    
+}
+.Card H4{
+    font-size:30px;
+    line-height: 33px;
+    color:#202529;
+    padding: 0 0px 15px;
+}
+.Card P{
+    font-size:15px;
+    line-height: 30px;
+    font-weight: 300;
+    color:#202529;
+}
+.bg-Yellow{
+    background:#FEC107;
+}
+.bg-Gray{
+    background:#1AA2B8;
+}
+.bg-DarkGray{
+    background:#6B757E;
+}
+.bg-Red{
+    background:#DC3346;
+}
+.bg-Green{
+    background:#96C93E;
+}
+
+/* DOS COLUMNAS
+**********************************************************************/
+.HalfCol{
+    background: #353A40;
+}
+.HalfCol:last-child{
+    padding:30px !important;
+}
+.HalfCol H3{
+  width: 100%;
+  font-size: 30px;
+  padding: 0px 0 25px;
+  color:#FFF;
+}
+.HalfCol P{
+  width: 100%;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 0px 0px;
+  color:#FFF;
+}
+.HalfCol FIGURE IMG{
+    max-width: 100%;
+    display: inherit;
+}
+/* FORM
+**********************************************************************/
+.Form H4{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+}
+.Form H4 A{
+    color:#222337;
+    text-decoration: underline dotted;
+}
+.Form H4 A:hover{
+    background-color: #FFC900;
+}
+.Form EM{
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    color:#6E757D;
+    font-style: normal;
+}
+.Form .Send{
+    color:#FFF;
+    width: 100%;
+    font-size: 22px;
+}
+.Form .Send:hover{
+    color:#FFF;
+    background:#353A40;
+}
+
+
+/* FOOTER
+**********************************************************************/
+FOOTER{
+    width: 100%;
+    padding: 40px 0px;
+    margin:30px 0 0;
+    background: rgb(29,55,68);
+    background: -moz-linear-gradient(90deg, rgba(29,55,68,1) 0%, rgba(30,83,114,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(29,55,68,1) 0%, rgba(30,83,114,1) 100%);
+    background: linear-gradient(90deg, rgba(29,55,68,1) 0%, rgba(30,83,114,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d3744",endColorstr="#1e5372",GradientType=1); 
+}
+FOOTER A{
+    color:#FFF !important;
+}
+FOOTER A:hover{
+    color:#FFC900 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+    .navbar{
+        padding: 0;
+    }
+    #navbarNav{
+        padding:20px 0 0;
+    }
+    #navbarNav .navbar-nav{
+        padding:0px;
+    }
+    .navbar-nav .nav-link{
+        width:100%;
+        display: inline-block;
+        padding: 15px 0;
+        border-top:1px dashed #FEC900;
+        text-align: center;
+    }
+    /*SLIDER*/
+    .Slider H2{
+        font-size:19px;
+    }
+    .Slider P {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .Slider .Botones{
+        margin:10px 0 0;
+    }
+    .carousel-indicators{
+        margin-bottom:0;
+    }
+    .carousel-caption{
+        padding: 100px 20px 20px;
+    }
+    .carousel-item{
+        height:350px;
+    }
+    .Slider .Info{
+        margin:0;
+        padding: 0;
+    }
+    /*ORADORES*/
+    .Card{
+        margin:0 0 40px;
+    }
+    .Card FIGURE{
+        height: 310px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
